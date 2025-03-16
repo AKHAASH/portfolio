@@ -1,3 +1,118 @@
-.contact-container{
+.contact-background{
     padding-top: 100px;
+    background: url("https://img.freepik.com/free-vector/3d-style-black-background-with-paper-layer_206725-669.jpg") no-repeat center center/cover;
+    min-height:84.9vh;
 }
+
+.contact-container {
+    text-align: center;
+    padding: 25px;
+    /* min-height: 100vh; */
+    background: rgba(255, 255, 255, 0.2); 
+    /* Transparent background */
+    backdrop-filter: blur(3px); 
+    /* Glassmorphism effect */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
+                0 6px 6px rgba(0, 0, 0, 0.2); /* 3D Shadow */
+    width: 60%;
+    margin: auto;
+    transform: perspective(1000px) rotateX(3deg) rotateY(3deg); /* 3D tilt effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Hover Effect for More 3D Feel */
+  .contact-container:hover {
+    transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+  }
+  
+  /* Heading */
+  .contact-container h1 {
+    /* font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif; */
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Form Styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 95%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .contact-form button {
+    padding: 12px;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background: linear-gradient(135deg, #0056b3, #0097e6);
+  }
+  
+  /* Social Media Links */
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    /* color: #ffffff; */
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .social-links a:hover {
+    color: #60adff;
+  }
+  
+  /* Contact Info */
+  .contact-container p {
+    /* font-size: 1.2rem;
+    color: #333;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif; */
+    font-size: 1.2rem;
+    /* font-weight: bold; */
+    color: #ffffff;
+    /* text-transform: uppercase; */
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    /* font-family: 'Times New Roman', Times, serif; */
+  }

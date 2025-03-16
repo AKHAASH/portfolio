@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background: #1a1a1a;
+    /* background: linear-gradient(rgba(87, 87, 91, 0.663), rgb(116, 148, 237)); */
     padding: 15px 30px;
     position: fixed;
     top: 0;

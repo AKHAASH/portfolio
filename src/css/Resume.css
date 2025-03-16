@@ -6,6 +6,7 @@
     /* min-height: 100vh; */
     padding-bottom: 23px;
     background: url("https://img.freepik.com/free-vector/abstract-blue-circle-black-background-technology_1142-12714.jpg") no-repeat center center/cover;
+    min-height:84.9vh;
   }
   
   /* Heading */
@@ -25,7 +26,7 @@
   /* Resume Viewer */
   .resume-viewer {
     width: 60%;
-    height: 400px;
+    height: 460px;
     border: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 8px;

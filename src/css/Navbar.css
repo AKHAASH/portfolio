@@ -1,0 +1,58 @@
+/* General Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1a1a1a;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 95.68%;
+    z-index: 1000;
+    box-shadow: 0 6px 10px rgb(86, 83, 83);
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  /* Navigation Links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+  }
+  
+  .nav-links li {
+    display: inline;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    transition: transform 0.3s ease-in-out;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .nav-links a:hover {
+    color: #00aaff;
+  }
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  }
+  

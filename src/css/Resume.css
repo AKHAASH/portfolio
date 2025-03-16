@@ -1,0 +1,74 @@
+/* Resume Container */
+.resume-container {
+    text-align: center;
+    padding-top : 80px;
+    background-color: #c1ccd7;
+    /* min-height: 100vh; */
+    padding-bottom: 23px;
+    background: url("https://img.freepik.com/free-vector/abstract-blue-circle-black-background-technology_1142-12714.jpg") no-repeat center center/cover;
+  }
+  
+  /* Heading */
+  .resume-container h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #e7e7e7;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    text-align: center;
+    margin-bottom: 20px;
+    /* padding-bottom: 6px; */
+    position: relative;
+    font-family:'Times New Roman', Times, serif;
+  }
+  
+  /* Resume Viewer */
+  .resume-viewer {
+    width: 60%;
+    height: 400px;
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .resume-viewer:hover{
+    transform: scale(1.03);
+  }
+  
+  .download-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #00d4ff);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    width: 20%;
+    text-align: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Hover Effect */
+  .download-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #0097e6);
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .resume-viewer {
+      width: 90%;
+      height: 400px;
+    }
+  
+    .download-btn {
+      padding: 10px 16px;
+      font-size: 1rem;
+    }
+  }
+  

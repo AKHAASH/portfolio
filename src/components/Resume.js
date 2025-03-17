@@ -12,7 +12,7 @@ function Resume() {
         title="Resume"
       ></iframe><br/>
       <a href={resumePDF}
-        download="Akhaash_Resume.pdf" className="download-btn">
+        download="Akhaash_Resum.pdf" className="download-btn">
         Download Resume
       </a>
     </div>

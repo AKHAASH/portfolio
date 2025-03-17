@@ -1,3 +1,105 @@
-.skills-container{
+.skills-container-background {
     padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    background: url("https://thumbs.dreamstime.com/b/new-skills-knowledge-webinar-training-business-internet-technology-concept-new-skills-knowledge-webinar-training-business-internet-121274023.jpg") no-repeat center center/cover;
+    min-height: 84.9vh;
+}
+
+.skills-container {
+    text-align: center;
+    max-width: 900px;
+    margin-bottom: 15px;
+    padding: 40px;
+    padding-top: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Dark background for the header */
+.skills-header {
+    background: rgba(29, 29, 29, 0.633); /* Dark theme */
+    padding: 5px;
+    padding-top: 0px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.skills-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.skills-description {
+    color: #ffffff;
+    font-size: 1.21rem;
+    margin: 0;
+}
+
+/* Scrollable Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-height: 50vh; /* Set height for scrollable area */
+    overflow-y: auto; /* Enable scrolling */
+    padding-right: 10px; /* Space for scrollbar */
+    padding-top: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+/* Custom Scrollbar for Webkit Browsers */
+.skills-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.skills-grid::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.skills-grid::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+.skill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    background: rgba(123, 123, 123, 0.456);
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.skill-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover .skill-icon {
+    transform: scale(1.1);
+}
+
+.skill-name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
 }

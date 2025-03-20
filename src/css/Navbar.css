@@ -1,59 +1,63 @@
 /* General Styles */
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #1a1a1a;
-    /* background: linear-gradient(rgba(87, 87, 91, 0.663), rgb(116, 148, 237)); */
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 95.68%;
-    z-index: 1000;
-    box-shadow: 0 6px 10px rgb(86, 83, 83);
-  }
-  
-  /* Logo */
-  .logo {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #e7e7e7;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  /* Navigation Links */
+  display: flex;
+  justify-content: space-between; /* Ensures spacing between logo and links */
+  align-items: center; /* Centers items vertically */
+  background: #1a1a1a;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0 6px 10px rgb(86, 83, 83);
+}
+
+/* Logo */
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e7e7e7;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* Centers links */
+  align-items: center;
+  gap: 45px;
+  flex-grow: 1; 
+  /* Allows links to take available space */
+}
+
+/* Ensures the logo stays on the left, and links are centered */
+.navbar .logo {
+  margin-right: auto;
+}
+
+.nav-links li {
+  display: inline;
+}
+
+.nav-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease-in-out;
+  font-family: "Poppins", sans-serif;
+}
+
+.nav-links a:hover {
+  color: #00aaff;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
   .nav-links {
-    list-style: none;
-    display: flex;
-    gap: 45px;
-  }
-  
-  .nav-links li {
-    display: inline;
-  }
-  
-  .nav-links a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    transition: transform 0.3s ease-in-out;
-    font-family: "Poppins", sans-serif;
-  }
-  
-  .nav-links a:hover {
-    color: #00aaff;
-  }
-  
-  /* Responsive Navbar */
-  @media (max-width: 768px) {
-    .nav-links {
       display: none;
-    }
   }
-  
+}

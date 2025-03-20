@@ -18,7 +18,7 @@
     border-radius: 15px;
     max-width: 1200px;
     width: 100%;
-}
+    animation: fadeUp 1s ease-in-out;}
 
 /* Title & Description */
 .projects-title {
@@ -28,12 +28,14 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 10px;
+    animation: slideInRight 1s ease-in-out;
 }
 
 .projects-description {
     color: #ddd;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    animation: slideIn 1s ease-in-out;
 }
 
 /* Scrollable Project Cards Grid */
@@ -71,12 +73,14 @@
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: popIn 0.8s ease-in-out;
 }
 
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.2);
 }
+
 
 /* Project Image */
 .project-image {
@@ -120,4 +124,60 @@
 
 .project-link:hover {
     color: #00a3d6;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px); /* Move from right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }

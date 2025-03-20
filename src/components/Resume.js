@@ -1,10 +1,12 @@
 import React from 'react'
 import '../css/Resume.css'
 import resumePDF from '../assets/Resume_Akhaash.pdf';
+import ScrollNavigator from "./ScrollNavigator";
 
 function Resume() {
   return (
     <div className='resume-container'>
+      <ScrollNavigator upPath="/skills" downPath="/contact" />
       <h3>My Resume</h3>
       <iframe
         src={resumePDF}

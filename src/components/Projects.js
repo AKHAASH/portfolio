@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Projects.css';
+import ScrollNavigator from "./ScrollNavigator";
 
 const projects = [
   {
@@ -31,6 +32,7 @@ const projects = [
 function Projects() {
   return (
     <div className='projects-container-background'>
+      <ScrollNavigator upPath="/about" downPath="/skills" />
       <div className='projects-container'>
         <h2 className='projects-title'>My Projects</h2>
         <p className='projects-description'>

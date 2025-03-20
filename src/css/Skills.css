@@ -16,6 +16,7 @@
     border-radius: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    animation: skills-popIn 0.8s ease-in-out;
 }
 
 /* Dark background for the header */
@@ -26,6 +27,7 @@
     border-radius: 15px;
     margin-bottom: 20px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    animation: skills-popIn 0.8s ease-in-out;
 }
 
 .skills-title {
@@ -35,12 +37,14 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 20px;
+    animation: skills-fadeIn 1s ease-in-out;
 }
 
 .skills-description {
     color: #ffffff;
     font-size: 1.21rem;
     margin: 0;
+    animation: skills-popIn 1s ease-in-out;
 }
 
 /* Scrollable Skills Grid */
@@ -54,6 +58,8 @@
     padding-top: 10px;
     scrollbar-width: thin;
     scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    animation: skills-popIn 0.8s ease-in-out;
+
 }
 
 /* Custom Scrollbar for Webkit Browsers */
@@ -79,6 +85,7 @@
     background: rgba(123, 123, 123, 0.456);
     backdrop-filter: blur(10px);
     transition: transform 0.3s ease, background 0.3s ease;
+    animation: skills-popIn 0.8s ease-in-out;
 }
 
 .skill-card:hover {
@@ -103,3 +110,70 @@
     color: #fff;
     text-transform: uppercase;
 }
+
+/* Animations */
+@keyframes skills-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes skills-popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes skills-fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes skills-slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-200px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes skills-slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(200px); /* Move from right */
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.skill-card:nth-child(1) { animation: skills-slideIn 1s ease-in-out; }
+.skill-card:nth-child(2) { animation: skills-slideIn 0.8s ease-in-out; }
+.skill-card:nth-child(3) { animation: skills-slideInRight 0.8s ease-in-out; }
+.skill-card:nth-child(4) { animation: skills-slideInRight 1s ease-in-out; }
+.skill-card:nth-child(5) { animation: skills-slideIn 1.2s ease-in-out; }
+.skill-card:nth-child(6) { animation: skills-slideIn 1s ease-in-out; }
+.skill-card:nth-child(7) { animation: skills-slideInRight 1s ease-in-out; }
+.skill-card:nth-child(8) { animation: skills-slideInRight 1.2s ease-in-out; }
+.skill-card:nth-child(9) { animation: skills-slideIn 1.4s ease-in-out; }
+.skill-card:nth-child(10) { animation: skills-slideIn 1.2s ease-in-out; }

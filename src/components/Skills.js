@@ -18,7 +18,7 @@ const skills = [
 function Skills() {
   return (
     <div className='skills-container-background'>
-      <ScrollNavigator upPath="/projects" downPath="/resume" />
+      {/* <ScrollNavigator upPath="/projects" downPath="/resume" /> */}
       <div className='skills-container'>
         <div className='skills-header'>
           <h2 className='skills-title'>My Tech Stack</h2>

@@ -5,7 +5,7 @@ import ScrollNavigator from "./ScrollNavigator";
 const Contact = () => {
   return (
     <div className="contact-background">
-      <ScrollNavigator upPath="/resume" downPath="/contact" />
+      {/* <ScrollNavigator upPath="/resume" downPath="/contact" /> */}
       <div className="contact-container">
         <h1 className="contact-me-heading">Contact Me</h1>
 

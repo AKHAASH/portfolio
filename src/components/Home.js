@@ -7,12 +7,12 @@ import photo from "../assets/AKHAASH-S.png"
 function Home() {
   return (
     <div className="home-container-background">
-      <ScrollNavigator upPath="/" downPath="/about" />
+      {/* <ScrollNavigator upPath="/" downPath="/about" /> */}
       
       <div className="home-container">
         {/* Left Section - Text */}
         <div className="home-text">
-          <h1>Hi, I'm <span className="highlight">Akhaash</span></h1>
+          <h1>Hi, I'm <span className="highlight">Akhaash S</span></h1>
           <h2 className="home-title">A Passionate <span className="developer">Full Stack Developer and Data Scientist</span></h2>
           <p className="home-description">
             I specialize in developing scalable full-stack applications using React, Flask, and MongoDB, while leveraging data science techniques to derive insights and optimize performance.

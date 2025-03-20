@@ -1,3 +1,97 @@
-.about-container{
-    padding-top: 100px;
+/* Background Styling */
+.about-container-background {
+    background: url("https://png.pngtree.com/background/20230413/original/pngtree-business-dark-business-man-standing-by-the-window-background-picture-image_2422190.jpg") no-repeat center center/cover;
+    /* min-height: 100vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    margin-top: 80px;
+    max-height: 83.6vh;
+    padding-bottom: 40px;
+}
+
+/* Main Container */
+.about-container {
+    width: 1000px;
+    height: 500px; 
+    /* margin-top: 40px; */
+    /* width: 60%; */
+    /* max-height: 80vh;  */
+    /* Scrollable */
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    border-style: solid;
+    border-width: 2px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    animation: about-fadeIn 1s ease-in-out;
+}
+
+/* Title */
+.about-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* Scrollable Content */
+.about-content {
+    color: #e7e7e7;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    padding-right: 10px; /* Space for scrollbar */
+}
+
+/* Subtitles */
+.about-subtitle {
+    font-size: 1.8rem;
+    color: #00d4ff;
+    margin-top: 20px;
+}
+
+/* List Styling */
+.about-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+
+/* Scrollbar Styling */
+.about-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.about-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.about-container::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+/* Fade-In Animation */
+@keyframes about-fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

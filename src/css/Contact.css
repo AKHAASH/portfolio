@@ -1,7 +1,7 @@
 .contact-background{
     padding-top: 100px;
     background: url("https://img.freepik.com/free-vector/3d-style-black-background-with-paper-layer_206725-669.jpg") no-repeat center center/cover;
-    min-height:84.9vh;
+    height:86.1vh;
 }
 
 .contact-container {
@@ -16,8 +16,11 @@
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 
                 0 6px 6px rgba(0, 0, 0, 0.2); /* 3D Shadow */
     width: 60%;
+    height: 87.5%;
     margin: auto;
-    transform: perspective(1000px) rotateX(3deg) rotateY(3deg); /* 3D tilt effect */
+    margin-top: 0px;
+    /* transform: perspective(1000px) rotateX(3deg) rotateY(3deg);  */
+    /* 3D tilt effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   

@@ -32,7 +32,7 @@ const projects = [
 function Projects() {
   return (
     <div className='projects-container-background'>
-      <ScrollNavigator upPath="/about" downPath="/skills" />
+      {/* <ScrollNavigator upPath="/about" downPath="/skills" /> */}
       <div className='projects-container'>
         <h2 className='projects-title'>My Projects</h2>
         <p className='projects-description'>
